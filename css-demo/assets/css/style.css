@@ -106,3 +106,18 @@ header.primary nav ul li a:hover, header.primary nav ul li a:active{
 .container {
 padding:20px 10%;
 }
+#additional-elements h2{
+  color:#36638b;
+  border-bottom:1px dotted
+}
+ 
+ 
+  a:link, a:visited{
+    color:#062617;
+    
+  }
+  
+  
+  a:active a:hover, {
+    text-decoration: none;
+  }
