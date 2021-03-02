@@ -6,11 +6,34 @@ html {
   *:after {
     box-sizing: inherit;
   }
+  body{
+    font-family:'Cutive Mono',monospace;
   
+
+  }
+  h1, h2, h3 {
+    font-family:'Libre Baskerville', serif ;
+  }
+  
+  header{
+    
+   
+    margin-bottom: 1rem;
+  }
+  nav ul{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: slategrey; 
+    padding: 0.5rem;
+  }
+
+  
+ 
 .container{
   display:grid;
   grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
   grid-gap:1rem;
+  grid-auto-flow: dense;
 }
 
 .container > div,  {
@@ -22,6 +45,10 @@ img{
   height: 100%;
   object-fit: cover;
   object-position: 50% 50%;}
+  section{
+    padding:1rem;
+    background-color: rgba(112, 128, 144, 0.5);
+  }
 
 
 .w-1{
