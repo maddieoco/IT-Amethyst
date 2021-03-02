@@ -22,9 +22,18 @@ html {
   }
   nav ul{
     display:grid;
-    grid-template-columns: repeat(3,1fr);
-    background-color: slategrey; 
-    padding: 0.5rem;
+    grid-template-columns:repeat(auto-fill,minmax(200px,1fr) );
+    gap: 1rem;
+    
+  }
+
+  nav ul li {
+    background-color: slategrey;
+    list-style: none;
+    text-decoration: none;
+    padding: top 1rem bottom 1rem;
+
+
   }
 
   
