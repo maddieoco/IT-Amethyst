@@ -22,7 +22,7 @@ html {
   }
   nav ul{
     display:grid;
-    grid-template-columns:repeat(auto-fill,minmax(200px,1fr) );
+    grid-template-columns:repeat(auto-fill,1fr);
     gap: 1rem;
     
   }
@@ -43,6 +43,7 @@ html {
   grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
   grid-gap:1rem;
   grid-auto-flow: dense;
+  margin:1rem;
 }
 
 .container > div,  {
@@ -59,7 +60,10 @@ img{
     background-color: rgba(112, 128, 144, 0.5);
   }
 
-
+summary{
+  font-size: 1.25em;
+  font-weight:bold;
+}
 .w-1{
   grid-column: span 1;
 }
@@ -99,5 +103,3 @@ img{
 .h-4{
   grid-row: span 4;
 }
- 
-  
