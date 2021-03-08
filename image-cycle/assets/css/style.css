@@ -33,3 +33,26 @@
     width: 1px;
     white-space: nowrap; /* 1 */
   }
+
+  /*--------Content Container------------*/
+
+  .container{
+    max-width: 80vw;
+    background-color:rgb(163, 163, 163);
+    margin:auto;
+    padding:2%;
+  }
+.gallery{
+  width: 750px;
+  height: auto;
+  border: 10px white;
+  border-style: solid;
+  margin:auto;
+  overflow:hidden;
+  background-color: rgb(255, 255, 255);
+
+}
+
+.gallery img{
+object-fit:fill;
+}

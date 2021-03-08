@@ -1,51 +1,84 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="en">
+
 <head>
-     <meta charset="utf-8"> <!-- Tells the browser what character set to expect !-->
-    <title> Prototype HTML Doc </title> <!-- Tells the browser what to display in the tab at the top of the page !-->
-     <meta author= "Maddie O'Connor"> <!-- Tells the browser who wrote the content !-->
-     <meta name="description" content="homepage">
-     <link rel="stylesheet" href="style.css" />
-     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;500;700;900&family=Hammersmith+One&display=swap" rel="stylesheet"> 
-     </head>
-    
-    <body>
-    <div id="wrap">
-    <h1>Maddie O'Connor</h1>
-    <h2>IT Amethyst Homepage</h2>
-    <div class='circle'></div>
+  <meta charset="utf-8">
+  <title>IT: Amethyst</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Maddie O'Connor">
 
-    <h3>Assignment Links</h3>
-    <nav>
-        <ul>
-            <li><a href="prototype-doc/index.html"> Prototype HTML Document</a></li>
-            <li><a href="css-demo/index.html">CSS Demo Page</a></li>
-            <li>  Positioning Lab <ul> <li> <a href="positioning-lab/absolute-1.html"> Absolute 1</a> </li>
-            <li><a href="positioning-lab/absolute-2.html">Absolute 2</a></li><li><a href="positioning-lab/float-1.html">Float 1</a></li><li><a href="positioning-lab/float-2.html">Float 2</a></li></ul>
-            </li>
-            <li><a href="assets/diner.jpg">CSS Diner</a></li>
-            <li> Graphics Assignments
-                <ul>
-                    <li><a href="graphicprojects/index.html">Vector Logo</a></li>
-                    <li><a href="graphicprojects/index.html">Image Replacement/Compositing</a></li>
-                    <li><a href="graphicprojects/index.html">Vector Extras</a></li>
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
 
-            </ul>
-        </li>
-        <li><a href="microsite/index.html">Micro Site V1</a></li>
-        </ul>
-    </nav>
-    <article class="container">
-        <h2>Maddie is a post-bacc student this year at UALR. She's working on it. </h2>
-        <h3> here's some more stuff:</h3>
-        <ul>
-            <li><a href="https://maddieoconnor.com">My Website</a></li>
-            <li><a href="https://internettinkering.wordpress.com">IT Minor Blog</a></li>
-        </ul>
-        <p></p>
-    </article> 
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
 
-    </div>
-   </body> 
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Libre+Baskerville&display=swap" rel="stylesheet"> 
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+<header>
+  
+ <h1>Maddie O'Connor</h1> 
+  <nav>
+      
+      <ul class="container">
+          <li> <a href="#faq">FAQ</a></li>
+          <li> <a href="#contact">Contact</a></li>
+          <li> <a href="#abt">About Me</a></li>
+        
+      </ul>
+  </nav>
+  
+</header>
+
+    <div class="container">
+<section class="h-2"><h2> 2020-21 Demo Links</h2> <ul>
+    <li><a href="prototype-doc/index.html"> Prototype HTML Document</a></li>
+    <li><a href="css-demo/index.html">CSS Demo Page</a></li>
+    <li>  Positioning Lab <ul> <li> <a href="positioning-lab/absolute-1.html"> Absolute 1</a> </li>
+    <li><a href="positioning-lab/absolute-2.html">Absolute 2</a></li><li><a href="positioning-lab/float-1.html">Float 1</a></li><li><a href="positioning-lab/float-2.html">Float 2</a></li></ul>
+    </li>
+ 
+</li>
+<li><a href="microsite/index.html">Micro Site V1</a></li>
+</ul></section>
+<section><h2>Second Level Heading</h2><p>This page is an experiment in CSS Grid layout and trying to push myself to combine my art practice with web development and learning new things. Photos taken across Arkansas over the course of 2020 and 2021</p> </section>
+<img src="microsite/assets/img/Blanchard-Springs-208.jpg" alt="creek" class="w-2 h-1"/> 
+<section id="abt" class="w-2"><h2>About Me</h2><p>hello world! I'm maddie and I love color. I'm constantly curious and this curiosity has taken me all sorts of places-an art degree, working at a web agency, then an animal shelter, 
+    and constantly adventuring in the world with a camera in my hand.</p> <p> while my degree is in fiber arts and textiles, and fabric will always be my first love, i've come to cherish the digital world and the way it shapes our lives. design, too is part of this ! I want in on that. so this page is shameless self-promotion.</p> </section>
+<img src="microsite/assets/img/summer-night.jpg" alt="lights">
+<img src="microsite/assets/img/white-wildflowers.jpg" alt="leaves" class="w-2 h-1"/>
+<img src="microsite/assets/img/texas-summer-sky-1280px.jpg " alt="sky" class="w-3"/>
+<img src="microsite/assets/img/Blanchard-Springs-198-1200px.jpg" alt="waterfall" class="w-3"/>
+
+ <section> <h3>what's the point?</h3><p>If content is really what makes a good website, then this is an attempt at a more minimal, type-focused design. </p><p>I've seen too many artist websites that are either so minimal they're soulless or so busy they're incomprehensible. This is an attempt to find a middle ground.  </p> </section> 
+<section class="w-3" ><h2 id="faq">Frequently Asked Questions</h2> 
+<details> <summary>Where can I see more work like this?</summary>On my website. But I'm not telling you where to find it. </details>
+<details><summary>Who took these photos?</summary>: ) take a guess : ) </details>
+</section>
+<section> <h2 id="contact">Contact</h2></section>
+      </div>
+
+
+
+
+<footer><h4> &copy; <a href="https://maddieoconnor.com">Maddie O'Connor</a> 2021   </h4>  </footer>
+
+
+
+ 
+
+</body>
+
 </html>
