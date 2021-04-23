@@ -1,0 +1,85 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>JS Calculator</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Maddie O'Connor">
+
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
+
+
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <h1>unit Conversion</h1>   
+  <form action="https://brucebauer.info/assets/ITEC3650/unitsconversion.php" method="post" id="myForm">
+    <div>
+      <label for="amount">Amount:</label>
+      <input type="text" id="FromValue" name="amount" />
+    </div>   
+    <div>
+      <label for="from">From:</label>
+      <select name="from" id="from">
+        <option value="0" selected="selected">Select unit</option>
+        <option value="cm">centimeters</option>
+        <option value="m">meters</option>
+        <option value="in">inches</option>
+        <option value="ft">feet</option>
+        <option value="yd">yards</option>
+        <option value="mi">miles</option>
+      </select>      
+      <label for="into">Into:</label>
+      <select name="into" id="into">
+        <option value="0" selected="selected">Select unit</option>
+        <option value="m">meters</option>
+        <option value="in">inches</option>
+        <option value="ft">feet</option>
+        <option value="yd">yards</option>
+        <option value="mi">miles</option>
+        </select>
+    </div>
+    <input type="submit" value="Convert">
+  </form>
+  
+  <p id="result"></p>
+  
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("#myForm").submit(function(e) {
+        e.preventDefault();
+        amount = $("#FromValue").val();
+        from = $("#from").val();
+        into = $("#into").val();
+        if (amount == "" || from == "0" || into == "0"){
+          alert("Please fill out all of the fields!");
+          return false;
+        }
+        
+        $.ajax({
+          type : "POST",
+          url : "https://brucebauer.info/assets/ITEC3650/unitsconversion.php",
+          data  : '&amount=' + amount + '&from=' + from + '&into=' + into,
+          success : function(res) {
+            $("#result").html(amount + " " + $('#from option:selected').text() + " = " + res + " " + $('#into option:selected').text()).css("display", "inline-block");
+          }
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
