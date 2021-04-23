@@ -18,14 +18,7 @@
     max-width:100%;
     height:auto;
   }
-
-  figure{
-    background-color:#fff;
-    padding: .5em;
-    border:20px solid rgba(224, 217, 230, 0.5)
-  }
   
-
   
     
   /* ------ Helper Classes -------*/
@@ -41,20 +34,15 @@
     white-space: nowrap; /* 1 */
   }
 
-  /*--------Content Container------------*/
-
-  .container{
-    max-width: 70vw;
-    background-color:slategrey;
-    margin:auto;
-  }
-
-  h1,h2,h3,h4,h5,h6 {
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-  }
-
-  H1{
-    font-size:2em;
-  
-  }
+  #table{
+    text-align:center;
+     border:1px solid black;
+ }
+ #table th{
+     margin:0% 2%;
+     border:1px solid black;
+ }
+ #table td{
+     border:1px solid black;
+     text-align:left;
+ }

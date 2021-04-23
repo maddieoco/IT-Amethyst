@@ -1,0 +1,21 @@
+@charset "UTF-8";
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background-color: #aba;
+}
+.gallery {
+	background-color: #fff;
+	width: 730px;
+	margin-top: 40px;
+	margin-right: auto;
+	margin-left: auto;
+	border: 1px solid #999;
+	height: 516px;
+	overflow: hidden; /*Avoids showing all of the images momentarily while JS loads */
+}
+.gallery img {
+	margin: 15px;
+}
