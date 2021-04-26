@@ -46,7 +46,20 @@
      border:1px solid black;
      text-align:left;
  }
-
+.wrapper{
+  max-width: 90vw;
+  margin:auto;
+}
  img{
-   border:1px solid slategray
- }
+   border:5px solid slategray;
+   display: inline; }
+.roverpic{
+  object-fit: contain;
+}
+.gallery{
+  display:grid;
+  grid-template-columns: repeat(5, 150px);
+  grid-gap: 0.75rem;
+  margin:auto;
+  
+}
